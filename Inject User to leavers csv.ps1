@@ -1,0 +1,5 @@
+﻿$fname = read-host -prompt "Leavers first name"
+$lname = read-host -Prompt "Leavers surname"
+$email = read-host -Prompt "Email address to forward emails to"
+$date = read-host -Prompt "When are they leaving (dd/mm/yyyy) e.g. 29/07/2019"
+"{0},{1},{2},{3}" -f $fname, $lname, $email, $date | Add-Content -Path "PATH TO CSV HERE"
